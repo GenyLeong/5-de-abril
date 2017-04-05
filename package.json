@@ -1,0 +1,53 @@
+{
+  "name": "mapas-prueba",
+  "version": "1.0.0",
+  "description": "probando a ver como voy a hacer los mapas",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.14.0",
+    "csvtojson": "^1.0.0",
+    "del": "^2.2.1",
+    "express": "^4.14.0",
+    "fs-extra": "^0.30.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-imagemin": "^3.0.2",
+    "gulp-install": "^0.6.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-livereload": "^3.8.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.9",
+    "jshint": "^2.9.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-csvtojson": "^0.2.0",
+    "gulp-install": "^0.6.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GenyLeong/mapas-d3.git"
+  },
+  "keywords": [
+    "mapas"
+  ],
+  "author": "GenyLeong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GenyLeong/mapas-d3/issues"
+  },
+  "homepage": "https://github.com/GenyLeong/mapas-d3#readme"
+}

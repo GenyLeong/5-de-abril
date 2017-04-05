@@ -1,0 +1,14 @@
+@import "./helpers/variables.scss";
+.mg-0 {
+    margin: 0px;
+}
+ 
+.mt{
+	margin-top: 56px;
+}
+
+@media (max-width: 600px) {
+	.mt{
+		margin-top: 28px;
+	}
+}

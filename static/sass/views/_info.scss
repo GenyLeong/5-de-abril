@@ -1,0 +1,81 @@
+	.bg{
+		overflow: hidden;
+	}
+
+    #canvasWrapper {
+    	width: 100%;
+    	 #cuadrado{
+	    	background: transparent;
+		    display: block;
+		    background-repeat: no-repeat;
+		    cursor: move;
+		    width: 562px;
+	    }
+	    img{
+	    	cursor: move;
+	    }
+}
+
+	.centered {
+	    transform: translate(-50%, -50%);
+	}
+
+	.circle {
+	    border-radius: 50%;
+	    cursor: pointer;
+	}
+
+	#marker-3 {
+	    left: 188%;
+	    top: -358px;
+	    position: relative;
+	}
+
+	.container-fluid{
+		margin-top: 2rem;
+	}
+
+	@media (max-width: 768px) {
+  		.bg{
+  			overflow: scroll !important;
+  		}
+  		.canvasWrapper-mb {
+  			overflow: scroll;
+  			height: 600px !important;
+  		}
+  		#canvasWrapper {
+  			position: absolute;
+		    top: 0;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    img{
+		    	position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    left: 0;
+			    right: 0;
+		    }
+  		}		
+}
+
+	@media (max-width: 420px) {
+  		.canvasWrapper-mb {
+  			overflow: scroll;
+  			height: 500px !important;
+  		}  		
+}
+
+	@media (max-width: 360px) {
+  		.canvasWrapper-mb {
+  			overflow: scroll;
+  			height: 400px !important;
+  		}
+}
+// #info {
+//   width: 400px;
+//   text-align: center; background: #fff;
+//   margin: 150px auto 0 auto;
+//   padding: 30px;
+//   border-radius: 5px;
+// }

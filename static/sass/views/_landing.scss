@@ -1,0 +1,157 @@
+.slider{
+	height: 88% !important;
+	img{
+		height: 100%;
+		width: auto;
+		filter: blur(2px);
+		background-repeat: norepeat;
+	    -webkit-animation: myfirst 20s; /* Chrome, Safari, Opera */
+	    animation: myfirst 2000;
+	    animation-play-state: running;
+	    -webkit-animation-play-state: running;
+	}
+	.indicators{
+		display: none;
+	}
+	.slides{
+		height: 100% !important;
+	}
+}
+
+.carousel-fixed-item{
+	position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 5;
+}  
+
+#maquinas{
+	font-family: $font_cultive;
+    color: black;
+    text-shadow: 3px 2px .5px #d2caca;
+    font-weight: 700;
+}
+
+.btn-indice{
+    font-size: 28px;
+    margin: 3% auto;
+    width: 12%;
+    a{
+      background-color: $larepublica;
+      height: 42px;
+      padding-top: 5px;
+      &:hover{
+        background-color: rgba(151, 3, 3, 0.72);
+        color: white;
+      }
+    }
+}
+
+#slide-out{
+	overflow-x:hidden; 
+	li{
+		opacity: 0;
+	}
+}
+
+.altura_video{
+  margin-bottom: 21px;
+}
+
+@-webkit-keyframes myfirst {
+    from {
+    background-position: bottom center;
+    background-size: cover;
+    }
+    to { 
+      background-position: top center;
+      background-size: cover;
+    }
+}
+
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1);
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(.1, .1, .1);
+    transform: scale3d(.1, .1, .1);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-transform-origin: center bottom;
+  transform-origin: center bottom;
+   -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.info{
+  overflow: hidden; 
+  height: 850px;
+}
+
+@media (max-width: 768px) {
+  .info{
+    height: 600px;
+    overflow: scroll;
+  }
+  .btn-indice{
+        width: 19%;
+  }
+  .canvasWrapper-mb {
+        overflow: scroll;
+        height: 600px !important
+    }
+}
+
+@media (max-width: 520px) {
+  .btn-indice{
+          width: 34%;
+    }
+}
+
+@media (max-width: 420px) {
+  h1{
+    font-size: 5.2rem;
+  }
+  h2{
+    font-size: 3.4rem;
+  }
+  .info{
+    height: 500px;
+  }
+   .canvasWrapper-mb {
+        overflow: scroll;
+        height: 500px !important
+      }
+}
+
+@media (max-width: 360px) {
+  .info{
+    height: 400px;
+  }
+.canvasWrapper-mb {
+        overflow: scroll;
+        height: 400px !important
+      }
+}

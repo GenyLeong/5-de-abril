@@ -1,0 +1,113 @@
+html, body{
+	height: 100%;
+}
+body{
+	overflow-x: hidden;
+}
+#contenido{
+	display: none;
+	height: 100%;	
+}
+
+.preloader-wrapper{
+	 margin-top: -10px;
+	 margin-left: -10px;
+	 left: 50%;
+	 top: 50%;
+	 position: absolute;
+}
+.spinner-black{
+	 border-color: black;
+}
+
+.spinner-red{
+	 border-color: $larepublica;
+}
+
+h1{
+	font-size: 6.2rem;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+    text-shadow: 8px 7px 14px #1f1d1d;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 9px;
+}
+
+h2{
+	font-size: 3.8rem;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+    text-shadow: 3px 4px 12px #d2d2d2;
+    color: $larepublica;
+    font-weight: 700;
+    letter-spacing: 12px;
+    line-height: 76px;
+    font-family: $font_oswald;
+        margin-bottom: 42px;
+}
+
+h3{
+	font-size: 3.2rem;
+    line-height: 110%;
+    margin: 2.1rem 0 1.68rem 0;
+    text-shadow: 8px 7px 14px #1f1d1d;
+    color: white;
+    font-weight: 700;
+    letter-spacing: 9px;
+}
+
+h4{
+	font-family: $font_cultive;
+}
+p{
+	font-size: 18px;
+}
+
+.la-republica {
+    background-color: $larepublica;
+    height: 48px;
+    img{
+    	margin: auto;
+    }
+}
+
+.collapsible-body{
+	padding: 14px;
+	.material-icons{
+    	font-size: 18px;
+    	margin: 0 5px 0 0 !important;
+	}
+}
+
+.side-nav {
+	a{
+		padding: 0 16px;
+	}
+}
+
+.drag-target{
+	display: none;
+}
+footer{
+	background-color: $larepublica;
+	h4{
+		   font-size: 1.7rem;
+    	margin-bottom: 5px;
+	}
+	li{
+		text-shadow: 1px 3px 9px #1f1d1d;
+	}
+	
+}
+
+@media (max-width: 600px) {
+	.vwm{
+		display: block
+	}
+	footer{
+		h3{
+			text-align: center;
+		}
+	}
+}
