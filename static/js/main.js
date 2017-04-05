@@ -82,18 +82,12 @@ $(document).ready(function() {
 
 }), $(window).load(function() {      
     $("#contenedor").hide(), $("#contenido").css({
-        display: "block"        
-    // }), $(".bg").interactive_bg(), $("#btns").interactive_bg({
-    //     strength: 10,
-    //     scale: 1.15,
-    //     contain: !1,
-    //     wrapContent: !0
-    // }), $(window).resize(function() {
-        // eliminarElemento(), altura_main(), $(".wrapper > .ibg-bg").css({
-        //     width: $(window).outerWidth(),
-        //     height: $(window).outerHeight()
-        // })
-    }), maquina("maquinas", texto[0], 160), console.log("ready"), setTimeout(bounce, 7200), video()
+        display: "block" }), maquina("maquinas", texto[0], 160), console.log("ready"), setTimeout(bounce, 7200), video(), 
+     if (ancho>768){
+       $("#canvasWrapper").css({
+        height: altura+170 + "px"
+    })  
+   } 
 });
 
 var texto = ["La historia contada por sus protagonistas"];
