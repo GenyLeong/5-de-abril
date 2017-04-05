@@ -36,7 +36,14 @@ function video(){
     }
     }  ;
 
+}
 
+function bg(){
+  if (ancho>768){
+       $("#canvasWrapper").css({
+        height: altura+170 + "px"
+    })  
+   } 
 }
 $(document).ready(function() {
 
@@ -82,13 +89,7 @@ $(document).ready(function() {
 
 }), $(window).load(function() {      
     $("#contenedor").hide(), $("#contenido").css({
-        display: "block" }), maquina("maquinas", texto[0], 160), console.log("ready"), setTimeout(bounce, 7200), video(), 
-     if (ancho>768){
-       $("#canvasWrapper").css({
-        height: altura+170 + "px"
-    })  
-   } 
-});
+        display: "block" }), maquina("maquinas", texto[0], 160), console.log("ready"), setTimeout(bounce, 7200), video(), bg()});
 
 var texto = ["La historia contada por sus protagonistas"];
 
